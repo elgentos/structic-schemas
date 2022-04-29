@@ -1,0 +1,13 @@
+stages:
+  - build
+
+schemas:
+  stage: build
+  only:
+    - master
+  artifacts:
+    paths:
+      - public
+  script:
+    - cp -r schemas public
+
